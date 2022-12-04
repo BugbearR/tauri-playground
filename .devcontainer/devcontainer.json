@@ -1,0 +1,7 @@
+{
+    "name": "tauri-playground",
+    "dockerFile": "Dockerfile",
+    "remoteUser": "node"
+    // "extensions": [
+    // ]
+}
