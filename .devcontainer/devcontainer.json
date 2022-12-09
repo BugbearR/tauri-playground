@@ -2,14 +2,16 @@
     "name": "tauri-playground",
     "dockerFile": "Dockerfile",
     "remoteUser": "node"
+    ,
+    "containerEnv": {
+        "DISPLAY": "${localEnv:DISPLAY}"
+    }
     // ,
-    // "containerEnv": {
-    //     "DISPLAY": "unix:0"
-    // },
     // "mounts": [
-    //     "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached"
-    // ],
-    // "runArgs": ["--privileged"]
+    //     "type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix"
+    // ]
+    ,
+    "runArgs": ["--privileged"]
     // "extensions": [
     // ]
 }
