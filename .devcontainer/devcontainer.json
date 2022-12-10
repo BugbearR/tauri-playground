@@ -3,7 +3,7 @@
     "dockerComposeFile": ["../docker/docker-compose.yml"],
     "service": "tauri-playground",
     "remoteUser": "node",
-    "workspaceFolder": "/home/user/code"
+    "workspaceFolder": "/home/node/code"
     // ,
     // "containerEnv": {
     //     "DISPLAY": "${localEnv:DISPLAY}"

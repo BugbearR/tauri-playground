@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.7"
 services:
   tauri-playground:
     build:
@@ -8,6 +8,6 @@ services:
     restart: always
     tty: true
     volumes:
-      - ../:/home/user/code
+      - ../:/home/node/code
       - /mnt/wslg:/mnt/wslg
       - /tmp/.X11-unix:/tmp/.X11-unix
