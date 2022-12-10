@@ -1,17 +1,19 @@
 {
     "name": "tauri-playground",
-    "dockerFile": "Dockerfile",
-    "remoteUser": "node"
-    ,
-    "containerEnv": {
-        "DISPLAY": "${localEnv:DISPLAY}"
-    }
+    "dockerComposeFile": ["../docker/docker-compose.yml"],
+    "service": "tauri-playground",
+    "remoteUser": "node",
+    "workspaceFolder": "/home/user/code"
+    // ,
+    // "containerEnv": {
+    //     "DISPLAY": "${localEnv:DISPLAY}"
+    // }
     // ,
     // "mounts": [
     //     "type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix"
     // ]
-    ,
-    "runArgs": ["--privileged"]
+    // ,
+    // "runArgs": ["--privileged"]
     // "extensions": [
     // ]
 }
